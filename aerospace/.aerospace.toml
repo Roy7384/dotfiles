@@ -56,6 +56,10 @@ on-mode-changed = []
     if.app-name-regex-substring = 'finder'
     run = 'layout floating'
 
+[[on-window-detected]]
+    if.app-name-regex-substring = 'preview'
+    run = 'layout floating'
+
 # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
