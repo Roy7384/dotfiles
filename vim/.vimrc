@@ -1,4 +1,3 @@
-colorscheme pablo
 syntax on
 set splitbelow
 set number
@@ -17,7 +16,7 @@ if !has('gui_running')
 endif
 
 set termguicolors
-set bg=dark
+colorscheme habamax
 
 set cursorline
 :highlight Cursorline cterm=bold ctermbg=black
