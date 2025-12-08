@@ -8,7 +8,7 @@ set shiftwidth=2
 set expandtab
 set smartindent
 set colorcolumn=72
-set clipboard=unnamed
+set clipboard=unnamed,unnamedplus
 
 set showmatch
 
