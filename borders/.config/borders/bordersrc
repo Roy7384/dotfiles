@@ -2,10 +2,10 @@
 
 options=(
 	style=round
-	width=10.0
+	width=8.0
 	hidpi=off
 # macOS menu-highlight blue
-	active_color=0xff5F95F9
+	active_color="glow(0xff5F95F9)"
         inactive_color=0x00000000
 )
 
