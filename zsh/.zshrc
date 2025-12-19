@@ -17,5 +17,8 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(direnv hook zsh)"
 
 # alias
-alias ll='ls -la'
+alias ll='ls --color -la'
+alias ls='ls --color -l -h'
+alias grep='grep -n --color'
+
 alias be='bundle exec'
