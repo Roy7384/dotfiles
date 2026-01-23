@@ -22,3 +22,6 @@ alias ls='ls --color -l -h'
 alias grep='grep -n --color'
 
 alias be='bundle exec'
+
+# opencode
+export PATH=/Users/royliu/.opencode/bin:$PATH
