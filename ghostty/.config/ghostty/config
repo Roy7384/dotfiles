@@ -7,3 +7,5 @@ window-padding-color = extend
 
 # override in macos: $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
 font-size = 12
+
+shell-integration-features = true
