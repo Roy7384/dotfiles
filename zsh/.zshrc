@@ -25,3 +25,4 @@ alias be='bundle exec'
 
 # opencode
 export PATH=/Users/royliu/.opencode/bin:$PATH
+export EDITOR=vim
