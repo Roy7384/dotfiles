@@ -22,6 +22,10 @@ alias ls='ls --color -l -h'
 alias grep='grep -n --color'
 
 alias be='bundle exec'
+alias gpf='git push --force-with-lease'
+alias gcm='git commit -m'
+alias gca='git commit --amend'
+alias gcan='git commit --amend --no-edit'
 
 # opencode
 export PATH=/Users/royliu/.opencode/bin:$PATH
