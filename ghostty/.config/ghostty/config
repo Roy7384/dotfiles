@@ -1,6 +1,7 @@
 theme = Catppuccin Mocha
 font-family = "JetBrainsMono Nerd Font Mono"
-background-opacity = 0.93
+background-opacity = 0.9
+background-blur = macos-glass-clear
 
 # mainly for vim
 window-padding-color = extend
