@@ -30,3 +30,4 @@ alias gcan='git commit --amend --no-edit'
 # opencode
 export PATH=/Users/royliu/.opencode/bin:$PATH
 export EDITOR=vim
+export PATH="$HOME/.local/bin:$PATH"
