@@ -26,6 +26,7 @@ alias gpf='git push --force-with-lease'
 alias gcm='git commit -m'
 alias gca='git commit --amend'
 alias gcan='git commit --amend --no-edit'
+alias gpu='git push -u origin $(git branch --show-current)'
 
 # opencode
 export PATH=/Users/royliu/.opencode/bin:$PATH
