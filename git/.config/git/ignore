@@ -2,3 +2,5 @@
 .envrc
 .idea/
 AGENTS.md
+
+**/.claude/settings.local.json
