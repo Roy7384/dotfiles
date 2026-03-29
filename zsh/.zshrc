@@ -31,6 +31,6 @@ alias gcan='git commit --amend --no-edit'
 alias gpu='git push -u origin $(git branch --show-current)'
 
 # opencode
-export PATH=/Users/royliu/.opencode/bin:$PATH
+export PATH="$HOME/.opencode/bin:$PATH"
 export EDITOR=vim
 export PATH="$HOME/.local/bin:$PATH"
