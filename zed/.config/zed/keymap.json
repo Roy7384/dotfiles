@@ -1,0 +1,84 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-a": "agent::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "cmd-?": "agent::ToggleFocus"
+    }
+  },
+  {
+    "context": "AgentPanel > Terminal",
+    "bindings": {
+      "alt-z": "agent::NewThread"
+    }
+  },
+  {
+    "context": "AgentPanel > Terminal",
+    "unbind": {
+      "cmd-n": "agent::NewThread"
+    }
+  },
+  {
+    "context": "AcpThread",
+    "bindings": {
+      "alt-z": "agent::NewThread"
+    }
+  },
+  {
+    "context": "AcpThread",
+    "unbind": {
+      "cmd-n": "agent::NewThread"
+    }
+  },
+  {
+    "context": "AgentPanel",
+    "bindings": {
+      "alt-z": "agent::NewThread"
+    }
+  },
+  {
+    "context": "AgentPanel",
+    "unbind": {
+      "cmd-n": "agent::NewThread"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-s": "multi_workspace::NextThread"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-w": "multi_workspace::PreviousThread"
+    }
+  },
+  {
+    "bindings": {
+      "alt-z": "agent::NewTerminalThread"
+    }
+  }
+]
