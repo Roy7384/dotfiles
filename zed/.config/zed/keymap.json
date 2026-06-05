@@ -1,22 +1,15 @@
-// Zed keymap
-//
-// For information on binding keys, see the Zed
-// documentation: https://zed.dev/docs/key-bindings
-//
-// To see the default key bindings run `zed: open default keymap`
-// from the command palette.
 [
   {
     "context": "Workspace",
     "bindings": {
-      // "shift shift": "file_finder::Toggle"
-    },
+      "shift shift": "file_finder::Toggle"
+    }
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      // "j k": "vim::NormalBefore"
-    },
+      "j k": "vim::NormalBefore"
+    }
   },
   {
     "context": "Workspace",
@@ -79,6 +72,24 @@
   {
     "bindings": {
       "alt-z": "agent::NewTerminalThread"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == waiting && (vim_operator == ys || vim_operator == cs)",
+    "unbind": {
+      "escape": "vim::SwitchToNormalMode"
+    }
+  },
+  {
+    "context": "vim_mode == visual",
+    "unbind": {
+      "escape": "vim::SwitchToNormalMode"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "escape": "vim::SwitchToNormalMode"
     }
   }
 ]
