@@ -16,6 +16,14 @@ if !has('gui_running')
 endif
 
 set termguicolors
+augroup TransparentBg
+  autocmd!
+  autocmd ColorScheme * highlight Normal       ctermbg=NONE guibg=NONE
+  autocmd ColorScheme * highlight NonText      ctermbg=NONE guibg=NONE
+  autocmd ColorScheme * highlight LineNr       ctermbg=NONE guibg=NONE
+  autocmd ColorScheme * highlight SignColumn   ctermbg=NONE guibg=NONE
+  autocmd ColorScheme * highlight EndOfBuffer  ctermbg=NONE guibg=NONE
+augroup END
 colorscheme habamax
 
 set cursorline
@@ -26,9 +34,12 @@ set smartcase
 set incsearch
 set hlsearch
 
-set relativenumber
 set nu
 
 let mapleader = " "
 imap jk <esc>
 
+
+set hidden
+nnoremap [b :tabprevious<CR>
+nnoremap ]b :tabnext<CR>

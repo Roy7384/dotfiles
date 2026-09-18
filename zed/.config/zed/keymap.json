@@ -91,5 +91,32 @@
     "unbind": {
       "escape": "vim::SwitchToNormalMode"
     }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "cmd-shift-c": "workspace::CopyRelativePath"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "unbind": {
+      "alt-cmd-shift-c": "workspace::CopyRelativePath"
+    }
+  },
+  {
+    "bindings": {
+      "1 2 3": "collab_panel::ToggleFocus"
+    }
+  },
+  {
+    "unbind": {
+      "cmd-shift-c": "collab_panel::ToggleFocus"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-shift-c": "editor::CopyRelativePath"
+    }
   }
 ]

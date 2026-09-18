@@ -34,3 +34,15 @@ alias gpu='git push -u origin $(git branch --show-current)'
 export PATH="$HOME/.opencode/bin:$PATH"
 export EDITOR=vim
 export PATH="$HOME/.local/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/royliu/work/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/royliu/work/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/royliu/work/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/royliu/work/google-cloud-sdk/completion.zsh.inc'; fi
+
+cl() {
+  local colors=(red orange yellow green blue purple pink)
+  local pick=${colors[RANDOM % ${#colors[@]} + 1]}  # zsh: arrays 1-indexed
+  command claude "/color $pick" "$@"
+}
